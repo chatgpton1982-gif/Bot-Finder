@@ -1,0 +1,7 @@
+aiogram==3.18.0
+telethon==1.39.0
+litellm==1.61.0
+python-dotenv==1.1.0
+aiosqlite==0.20.0
+pydantic==2.10.0
+cryptography==44.0.0
