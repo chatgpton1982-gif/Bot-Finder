@@ -317,7 +317,7 @@ python -m bot.main
 # Telethon попросит ввести код → введите → сессия сохранена в data/telegram_session.session
 
 # 2. Скопируйте session-файл на сервер
-scp -P 10022 data/telegram_session.session root@your-server:/opt/tg_bot_finder/data/
+scp data/telegram_session.session root@your-server:/opt/tg_bot_finder/data/
 
 # 3. На сервере выставьте права
 sudo chown tg_bot:tg_bot /opt/tg_bot_finder/data/telegram_session.session
@@ -328,7 +328,7 @@ sudo chmod 600 /opt/tg_bot_finder/data/telegram_session.session
 
 ```bash
 # 1. Подключитесь к серверу по SSH
-ssh -p 10022 root@your-server
+ssh root@your-server
 
 # 2. Запустите tmux
 tmux new -s auth
