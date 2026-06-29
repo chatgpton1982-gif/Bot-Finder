@@ -402,7 +402,7 @@ tg_bot_finder/
 Все команды выполняются на сервере через SSH:
 
 ```bash
-ssh -i C:\Users\sysadmin.ssh\id_ed25519 -p 10022 root@45.198.0.230
+ssh -i C:\Users\sysadmin.ssh\id_private_key root@ip_server
 ```
 
 ### Статус сервиса
@@ -498,7 +498,7 @@ systemctl restart tg_bot_finder
 ### Быстрая диагностика (одной командой из Windows)
 
 ```bash
-ssh -i C:\Users\sysadmin.ssh\id_ed25519 -p 10022 root@45.198.0.230 "systemctl status tg_bot_finder --no-pager && echo '---LOGS---' && journalctl -u tg_bot_finder -n 10 --no-pager"
+ssh -i C:\Users\sysadmin.ssh\private_key root@ip_server "systemctl status tg_bot_finder --no-pager && echo '---LOGS---' && journalctl -u tg_bot_finder -n 10 --no-pager"
 ```
 
 ### Проверка безопасности
